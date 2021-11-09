@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,500;1,600&family=Roboto:wght@300;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 1330px;
+}
+header {
+  background-color: #e6da65;
+}
+body {
+  font-family: 'Chakra Petch', sans-serif;
+}
+h1 {
+  font-family: 'Chakra Petch';
+  font-size: 62px;
+  font-weight: 500;
+  color: #e5e5e5;
+}
+
+h2 {
+  font-size: 48px;
+  color: #e5e5e5;
+  font-weight: 300;
+}
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  background-color: #e6da65;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 150px;
+  height: 83px;
+  display: flex;
+}
+.nav-desktop {
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+}
+a {
+  text-decoration: none;
+  color: #1d2540;
+  font-family: 'Chakra Petch';
+  font-weight: 500;
+}
+.searchbar {
+  width: 480px;
+  height: 64px;
+  text-indent: 10px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  border-width: 0;
+  margin-bottom: 12px;
+}
+.nav-desktop ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+.hero-banner {
+  height: 708px;
+}
+.hero-banner-text {
+  width: 1330px;
+  height: 202px;
+
+  margin: 0 auto;
+}
+
+.hbt {
+  padding: 75px;
+}
+
+.hbt2 {
+  padding-left: 75px;
+}
+.bold {
+  font-weight: 500;
+  color: #2a211a;
+}
+
+.header-pic {
+  background-image: url('../img/herobanner1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #d3c033;
+  text-align: center;
+  width: 200px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Chakra Petch';
+  font-weight: 300;
+  font-size: 32px;
+  margin-left: 75px;
+}
+.features {
+  background-color: #2b2b2b;
+}
+.even-columns {
+  display: flex;
+  justify-content: space-between; /*Lager jevn plass MELLOM elementene
+  Justify-content: space-around; 
+  kan også brukes her og lager automatisk like mye plass mellom 
+  elementene 
+  OG 
+  høyre/venstre siden av elementene i forhold til containeren de er inni
+  Derfor er det viktig å spesifisere width på foreldre elementet*/
+
+  /*Styrer bredden til flex-containeren*/
+  max-width: 80%;
+  margin: 0 auto;
+  height: 600px;
+}
+.card {
+  max-width: 250px;
+  width: 250px;
+}
+
+.card h3 {
+  text-align: center;
+}
+.card img {
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+}
+.button-card {
+  color: black;
+  width: 200px;
+  text-decoration: none;
+  border-style: solid;
+  font-family: 'Chakra Petch';
+  font-size: 32px;
+  font-weight: 300;
+  background-color: #d3c033;
+  padding: 5px 40px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+h3 {
+  font-style: italic;
+  color: #e5e5e5;
+}
+
+.games {
+  display: flex;
+  justify-content: space-between;
+  color: #e5e5e5;
+}
+
+.pre {
+  display: flex;
+  flex: 1;
+  padding: 5px;
+}
+.new {
+  display: flex;
+  flex: 1;
+  padding: 5px;
+}
+.used {
+  display: flex;
+  flex: 1;
+  padding-top: 5px;
+}
+
+.button2 {
+  cursor: pointer;
+  background-color: #d3c033;
+  text-align: center;
+  width: 200px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 75px;
+  font-family: 'Chakra Petch';
+  font-weight: 300;
+  font-size: 32px;
+}
+.button3 {
+  cursor: pointer;
+  background-color: #d3c033;
+  text-align: center;
+  width: 200px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  bottom: 10px;
+  left: 531px;
+  font-family: 'Chakra Petch';
+  font-weight: 300;
+  font-size: 32px;
+}
+.button4 {
+  cursor: pointer;
+  background-color: #d3c033;
+  text-align: center;
+  width: 200px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  bottom: 10px;
+  left: 939px;
+  font-family: 'Chakra Petch';
+  font-weight: 300;
+  font-size: 32px;
+}
+.community-title {
+  text-align: center;
+  font-family: 'Chakra Petch';
+  font-size: 48px;
+  font-weight: 300;
+  color: #1d2540;
+}
+.community {
+  width: 100%;
+  height: 800px;
+  background-image: url(/img/co.png);
+  background-size: cover;
+  color: #d3c033;
+  opacity: 0.8;
+
+  display: flex;
+  justify-content: center;
+}
+.community-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  padding-top: 40px;
+}
+.community1 {
+  font-size: 72px;
+  padding-left: 75px;
+  display: flex;
+  justify-content: center;
+  color: #e5e5e5;
+}
+.community2 {
+  font-family: 'Chakra Petch';
+  font-weight: 700;
+  font-size: 62px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.315);
+  padding-left: 75px;
+}
+
+.button5 {
+  cursor: pointer;
+  color: #1d2540;
+  background-color: #d3c033;
+  text-align: center;
+  width: 200px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Chakra Petch';
+  font-weight: 300;
+  font-size: 32px;
+  margin-left: 75px;
+}
+
+.footer {
+  background-color: #d3c033;
+}
+.logo-footer {
+  width: 150px;
+  height: 83px;
+  display: flex;
+  float: inline-start;
+  padding-top: 20px;
+}
+
+.column-layout {
+  max-width: 1330px;
+  background-color: #d3c033;
+  margin: 0 auto;
+  line-height: 1.65;
+  padding: 92px 75px;
+  display: flex;
+}
+.main-column {
+  flex: 1;
+}
+.sidebar-one {
+  flex: 1;
+}
+.sidebar-two {
+  flex: 1;
+}
+main {
+  height: 800px;
+}
+.container-contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1330px;
+  height: 100%;
+  padding: 20px 100px;
+}
+
+.container-contact:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/img/herobanner1.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px);
+}
+.contact {
+  color: #1d2540;
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.left {
+  height: 100%;
+  background: url(/img/herobanner1.png) no-repeat center;
+  background-size: cover;
+}
+.right {
+  padding: 25px 40px;
+}
+h2 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+h2:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #2ecc71;
+}
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.area {
+  min-height: 150px;
+}
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #2ecc71;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #27ae60;
+}
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 375px) {
+  .searchbar {
+    width: 200px;
+    height: 20px;
+    text-indent: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    border-width: 0;
+    margin-bottom: 12px;
+  }
+  .hero-banner {
+    height: 375px;
+  }
+  .hero-banner-text {
+    width: 1330px;
+    height: 202px;
+    background-color: rgba(0, 0, 0, 0.171);
+    margin: 0 auto;
+  }
+  .bold {
+    color: lightcoral;
+  }
+  .even-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*Lager jevn plass MELLOM elementene
+    Justify-content: space-around; 
+    kan også brukes her og lager automatisk like mye plass mellom 
+    elementene 
+    OG 
+    høyre/venstre siden av elementene i forhold til containeren de er inni
+    Derfor er det viktig å spesifisere width på foreldre elementet*/
+
+    /*Styrer bredden til flex-containeren*/
+    max-width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .logo {
+    width: 66px;
+    height: 42px;
+    display: flex;
+  }
+  h1 {
+    font-family: 'Chakra Petch';
+    font-size: 25px;
+    font-weight: 500;
+    color: #e5e5e5;
+  }
+  h2 {
+    font-size: 25px;
+    color: #e5e5e5;
+    font-weight: 300;
+  }
+
+  .button {
+    cursor: pointer;
+    background-color: #d3c033;
+    text-align: center;
+    width: 125px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Chakra Petch';
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 75px;
+  }
+  .community {
+    height: 375px;
+  }
+  .community-title {
+    text-align: center;
+    font-family: 'Chakra Petch';
+    font-size: 25px;
+    font-weight: 300;
+    color: #1d2540;
+  }
+  .community-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 70%;
+    padding-top: 40px;
+  }
+  .community1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #e5e5e5;
+  }
+  .community2 {
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 20px;
+    color: #e5e5e5;
+  }
+  .button5 {
+    cursor: pointer;
+    color: #1d2540;
+    background-color: #d3c033;
+    text-align: center;
+    width: 125px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Chakra Petch';
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 50px;
+    padding: 15px;
+  }
+  .column-layout {
+    max-width: 1330px;
+    background-color: #d3c033;
+    margin: 20;
+    line-height: 1.65;
+    padding: 20px 20px;
+    font-size: 12px;
+    display: flex;
+  }
+  .main-column {
+    flex: 1;
+  }
+  .sidebar-one {
+    flex: 1;
+  }
+  .sidebar-two {
+    flex: 1;
+  }
+  .logo-footer {
+    width: 62px;
+    height: 40px;
+    display: flex;
+    float: inline-start;
+    padding-top: 20px;
+  }
+}
