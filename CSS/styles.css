@@ -315,6 +315,7 @@ h3 {
 }
 main {
   height: 800px;
+  max-width: 1330px;
 }
 .container-contact {
   position: relative;
@@ -342,7 +343,7 @@ main {
   color: #1d2540;
 }
 .contact-box {
-  max-width: 850px;
+  max-width: 1193px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -353,6 +354,7 @@ main {
 }
 .left {
   height: 100%;
+  max-width: 1330px;
   background: url(/img/herobanner1.png) no-repeat center;
   background-size: cover;
 }
