@@ -4,53 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Buy new games, sell old games, get in touch with other players!">
     <title>Account</title>
+
+   
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <header>
       <div class="container">
-          <div class="nav-desktop">
-         <a href="#"> <img class="logo" src="/img/GameHub_Logo.png" alt="GameHub Logo"></a>
-          <input class="searchbar" type="text" placeholder="Search for games" />
-          <ul>
-              <li><a href="account.html">Account</a>
-              <li><a href="games.html">Games</a>
-              <li><a href="contact.html">Contact</a>
-              <li><a href="signup.html">Sign Up</a>
-              <li><a href="loggin.html">Logg Inn</a>
-          </ul>
-          </div>
+        <div class="nav-desktop">
+          <a href="/index.html"> <img class="logo" src="/img/GameHub_Logo.png" alt="GameHub Logo"></a>
+           <input class="searchbar" type="text" placeholder="Search for games" />
+           <ul>
+            <li><a href="account.html">Account</a>
+            <li><a href="games.html">Games</a>
+            <li><a href="contact.html">Contact</a>
+            <li><a href="signup.html">Sign Up</a>
+            <li><a href="login.html">Logg Inn</a>
+           </ul>
         </div>
       </div>
     </header>
-    <section>
-      
-    </section>
-      <footer class="footer">
-        <a href="#"><img class="logo-footer" src="img/GameHub_Logo.png" alt="Gamehub Logo"></a>
-        <div class="column-layout">
-          <div class="main-column">
-            <h4>Menu</h4>
-          <a href="#"></br><p>New Games</p></a>
-          </br>  <a href="#"><p>Old Games</p></a>
-         </br> <a href="#"><p> Pre-order</p></a>
-       </br> <a href="#"><p>Sell Games</p></a>
-          </div>
-          <div class="sidebar-one">
-            <h4>Community</h4>
-           </br><a href="#"><p>Facebook</p>
-         </br><a href="#"><p>Youtube</p></a>
-       </br><a href="#"><p>Twitch</p></a>
-     </br><a href="#"><p>Steam</p></a>
-          </div>
-          <div class="sidebar-two">
-            <h4>Admin</h4>
-           </br><a href="#"><p>Account</p></a>
-         </br><a href="#"><p>Contact Support</p></a>
-          </div>
+  <main>  
+    <div class="container-account">
+      <div class="contact-box">
+      <div class="profile-pic"></div>
+        <div class="right">
+        <h2 class="contact">Your Profile</h2>
+        <input type="text" class="field" placeholder="Mike Wazawzski">
+        <input type="email" class="field" placeholder="Example@email.com">
+        <input type="text" class="field" placeholder="+47 123 011 93">
+        <input type="text" class="field" placeholder="Change password">
+        <input type="text" class="field" placeholder="Confirm password">
+        <a href="/account.html"><button class="btn-2">Confirm Changes</button></a>
         </div>
-         
-       </footer>
-  </body>
+      </div>
+      
+    </div>
+  </main>
+  <section>
+    <h2 style="text-align: center; color:#1d2540 ;">Recently Bought Games</h2>
+      <div class="even-columns">
+          <div class="card">
+            <h3 class="pre" style="color:#1d2540">Pre-ordered games</h3>
+            <img class="Cover1" src="/img/img3.png" alt="Black 4K">
+            <a href="#" class="button-card">View More</a>
+          </div>
+          <div class="card">
+            <h3 class="new"style="color:#1d2540">Recently bought</h3>
+           <img src="/img/GameHub_covers8.jpg" alt="Boxer 4K">
+           <a href="#" class="button-card">View More</a>
+          </div>
+          <div class="card">
+            <h3 class="used" style="color:#1d2540">Used Games</h3>
+            <img src="/img/GameHub_covers10.jpg" alt="Forge Legend">
+            <a href="#" class="button-card">View More</a>
+          </div>
+          </div>
+          
+  </section>
+
+    
+    
+    <footer class="footer">
+      <a href="/index.html"><img class="logo-footer" src="img/GameHub_Logo.png" alt="Gamehub Logo"></a>
+      <div class="column-layout">
+       <div class="main-column">
+        <h4>Menu</h4>
+      <a href="#"></br><p>New Games</p></a>
+      </br>  <a href="#"><p>Old Games</p></a>
+      </br> <a href="#"><p> Pre-order</p></a>
+      </br> <a href="#"><p>Sell Games</p></a>
+      </div>
+       <div class="sidebar-one">
+         <h4>Community</h4>
+         </br><a href="#"><p>Facebook</p>
+         </br><a href="#"><p>Youtube</p></a>
+         </br><a href="#"><p>Twitch</p></a>
+         </br><a href="#"><p>Steam</p></a>
+         </div>
+         <div class="sidebar-two">
+         <h4>Admin</h4>
+         </br><a href="#"><p>Account</p></a>
+         </br><a href="#"><p>Contact Support</p></a>
+         </div>
+    </div> 
+     
+     </footer>
+   </body>
 </html>

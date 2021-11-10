@@ -152,7 +152,7 @@ img {
   font-size: 32px;
   font-weight: 300;
   background-color: #d3c033;
-  padding: 5px 40px;
+  padding: 0px 49px;
 }
 
 img {
@@ -375,7 +375,7 @@ h2:after {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: #2ecc71;
+  background-color: #d3c033;
 }
 .field {
   width: 100%;
@@ -401,7 +401,7 @@ h2:after {
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  background-color: #2ecc71;
+  background-color: #d3c033;
   cursor: pointer;
   outline: none;
   border: none;
@@ -410,6 +410,156 @@ h2:after {
 .btn:hover {
   background-color: #27ae60;
 }
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: url(/img/accountphoto.png);
+  background-size: cover;
+}
+.container-login {
+  max-width: 700px;
+  width: 100%;
+  background: #c4c4c4;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container-login .title {
+  font-size: 25px;
+  font-weight: 300;
+  position: relative;
+}
+.container-login .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: #01403a;
+}
+.container-login form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #01403a;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #1d2540;
+}
+form .seller-details .seller-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .seller-details .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+.seller-details .category label {
+  display: flex;
+  align-items: center;
+}
+.seller-details .category .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three {
+  border-color: #000;
+  background: #fff;
+}
+form input[type='radio'] {
+  display: none;
+}
+form .btn-loggin {
+  height: 45px;
+  margin: 45px 0;
+}
+form .btn-loggin input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  background: #01403a;
+  font-size: 18px;
+  font-family: Chakra Petch;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+form .btn-loggin input:hover {
+  background: #bc2d7c;
+}
+
+.container-account {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1330px;
+  height: 100%;
+  padding: 20px 100px;
+}
+
+.container-account:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/img/herobanner1.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px);
+}
+.profile-pic {
+  background: url(/img/accountphoto.png);
+  height: 100%;
+  max-width: 1330px;
+  background-size: cover;
+}
+.btn-2 {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #d3c033;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+/* Contact page */
 @media screen and (max-width: 880px) {
   .contact-box {
     grid-template-columns: 1fr;
@@ -418,8 +568,28 @@ h2:after {
     height: 200px;
   }
 }
+@media screen and (max-width: 584px) {
+  .container-login {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .seller-details .category {
+    width: 100%;
+  }
+  .container-login form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
 /* Mobile */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 410px) {
   .searchbar {
     width: 200px;
     height: 20px;

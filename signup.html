@@ -11,75 +11,72 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
+  <body class="body-wrapper">
     <header>
     <div class="container">
         <div class="nav-desktop">
-       <a href="#"> <img class="logo" src="/img/GameHub_Logo.png" alt="GameHub Logo"></a>
+       <a href="index.html"> <img class="logo" src="/img/GameHub_Logo.png" alt="GameHub Logo"></a>
         <input class="searchbar" type="text" placeholder="Search for games" />
         <ul>
             <li><a href="account.html">Account</a>
             <li><a href="games.html">Games</a>
             <li><a href="contact.html">Contact</a>
             <li><a href="signup.html">Sign Up</a>
-            <li><a href="loggin.html">Logg Inn</a>
+            <li><a href="login.html">Logg Inn</a>
         </ul>
+      </div>
+    </div>
+  </header>
+  <section class="login-container">
+  <div class="container-login">
+    <div class="title">Registration</div>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="text" placeholder="Enter your password" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input type="text" placeholder="Confirm your password" required>
         </div>
       </div>
-    </div></header>
-
-
-    <section class="container1 hero-banner header-pic">
-      <div class="hero-banner-text">
-          <h1 class="hbt">Welcome to the universe of games!</h1>
-    
-      
-        <h2 class="hbt2">Support a fellow <span class="bold">gamer,</span>
-          buy</br> and sell used games <span class="bold"> here!</span></h2>
-          <a href="#"><div"><button class="button">Join Now</button></a>
+      <div class="seller-details">
+        <input type="radio" name="seller" id="dot-1">
+        <input type="radio" name="seller" id="dot-2">
+        <input type="radio" name="seller" id="dot-3">
+        <span class="seller-title">Please select your role</span>
+        <div class="category">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="seller">Buyer</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span> 
+            <span class="seller">Seller</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="seller">Both</span>
+          </label>
+        </div>
       </div>
-      
-
+      <div class="btn-loggin">
+       <a href="/login.html"> <h4>Already got an account? Log inn here</h4></a>
+        <input type="submit" value="Register">
       </div>
-    </section>
-    <body>
-      <section class="features">
-          <h2 style="text-align: center;">Features</h2>
-      <div class="even-columns">
-          <div class="card">
-            <h3 class="pre">Pre-order</h3>
-            <img class="Cover1" src="/img/img3.png" alt="Black 4K">
-            <a href="#" class="button-card">View More</a>
-          </div>
-          <div class="card">
-            <h3 class="new">New Games</h3>
-           <img src="/img/GameHub_covers8.jpg" alt="Boxer 4K">
-           <a href="#" class="button-card">View More</a>
-          </div>
-          <div class="card">
-            <h3 class="used">Used Games</h3>
-            <img src="/img/GameHub_covers10.jpg" alt="Forge Legend">
-            <a href="#" class="button-card">View More</a>
-          </div>
-          </div>
-      </section>
-    </body>
-  
-    <h1 class="community-title">Community</h1>
-    <section class="community">
-  
-      <div class="community-text">
-      <h1 class="community1">Join our gaming universe</h1>
-      <h1 class="community2">
+    </form>
+  </div>
+</section>
 
-      We love games and we love sharing</br>
-    
-      Come check out some of our Guides!
-      </h1>
-      <div class="button5">View More</div>
-    </div>
-  
-    </section>
     
     
   
