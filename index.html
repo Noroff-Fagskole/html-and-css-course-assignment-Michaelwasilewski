@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Buy new games, sell old games, get in touch with other players!">
     <title>GameHub</title>
-
-   
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -17,13 +22,16 @@
         <div class="nav-desktop">
           <a href="#"> <img class="logo" src="/img/GameHub_Logo.png" alt="GameHub Logo"></a>
            <input class="searchbar" type="text" placeholder="Search for games" />
-           <ul>
+           <ul class="ul-mobile">
             <li><a href="account.html">Account</a>
             <li><a href="games.html">Games</a>
             <li><a href="contact.html">Contact</a>
             <li><a href="signup.html">Sign Up</a>
             <li><a href="login.html">Logg Inn</a>
            </ul>
+           <a href="account.html"><i class="far fa-user-circle"></i></a>
+           <a href="games.html"><i class="fas fa-gamepad"></i></a>
+           <a href="contact.html"><i class="far fa-comments"></i></a>
         </div>
       </div>
     </header>
@@ -44,7 +52,7 @@
     </section>
     <body>
       <section class="features">
-          <h2 style="text-align: center;">Features</h2>
+          <h2 class="features-title">Features</h2>
       <div class="even-columns">
           <div class="card">
             <h3 class="pre">Pre-order</h3>
@@ -78,32 +86,29 @@
      </div>
     </section>
   
-  <footer class="footer">
-    <a href="/index.html"><img class="logo-footer" src="img/GameHub_Logo.png" alt="Gamehub Logo"></a>
-    <div class="column-layout">
-      <div class="main-column">
-        <h4>Menu</h4>
-      <a href="#"></br><p>New Games</p></a>
-      </br>  <a href="#"><p>Old Games</p></a>
-     </br> <a href="#"><p> Pre-order</p></a>
-   </br> <a href="#"><p>Sell Games</p></a>
+    <footer class="footer">
+      <a href="/index.html"><img class="logo-footer" src="img/GameHub_Logo.png" alt="Gamehub Logo"></a>
+      <div class="column-layout">
+        <div class="main-column">
+          <h4>Menu</h4>
+        <a href="#"></br><p>New Games</p></a>
+        </br>  <a href="#"><p>Old Games</p></a>
+       </br> <a href="#"><p> Pre-order</p></a>
+     </br> <a href="#"><p>Sell Games</p></a>
+        </div>
+        <div class="sidebar-one">
+          <h4>Community</h4>
+         </br><a href="#"><p>Facebook</p>
+       </br><a href="#"><p>Youtube</p></a>
+     </br><a href="#"><p>Twitch</p></a>
+   </br><a href="#"><p>Steam</p></a>
+        </div>
+        <div class="sidebar-two">
+          <h4>Admin</h4>
+         </br><a href="#"><p>Account</p></a>
+       </br><a href="#"><p>Contact Support</p></a>
+        </div>
       </div>
-      <div class="sidebar-one">
-        <h4>Community</h4>
-       </br><a href="#"><p>Facebook</p>
-     </br><a href="#"><p>Youtube</p></a>
-   </br><a href="#"><p>Twitch</p></a>
- </br><a href="#"><p>Steam</p></a>
-      </div>
-      <div class="sidebar-two">
-        <h4>Admin</h4>
-       </br><a href="#"><p>Account</p></a>
-     </br><a href="#"><p>Contact Support</p></a>
-      </div>
-    </div>
-     
-   </footer>
-  </body>
-  
-  
-</html>
+     </footer>
+    </body>
+  </html>

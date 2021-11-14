@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Buy new games, sell old games, get in touch with other players!">
-    <title>GameHub</title>
+    <title>Checkout Page</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -40,51 +40,99 @@
 
   <section class="login-container">
   <div class="container-login">
-    <div class="title">Registration</div>
-    <form action="#">
+    <div class="title">Billing Address</div>
+    <form action="/checkout-sucsess.html">
       <div class="user-details">
         <div class="input-box">
           <span class="details">Full Name</span>
-          <input type="text" placeholder="Enter your name" required>
+          <input type="text" placeholder="Jane D. Doe" required>
         </div>
         <div class="input-box">
           <span class="details">Email</span>
           <input type="text" placeholder="Enter your email" required>
         </div>
         <div class="input-box">
-          <span class="details">Password</span>
-          <input type="text" placeholder="Enter your password" required>
+          <span class="details">Address</span>
+          <input type="text" placeholder="Enter your address" required>
         </div>
         <div class="input-box">
-          <span class="details">Confirm Password</span>
-          <input type="text" placeholder="Confirm your password" required>
+          <span class="details">State</span>
+          <input type="text" placeholder="Oslo" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Zip</span>
+          <input type="text" placeholder="0487" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Card Number</span>
+          <input type="text" placeholder="1111 2222 3333 4444" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Exp Month</span>
+          <input type="text" placeholder="November" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Exp Year</span>
+          <input type="text" placeholder="2024" required>
+        </div>
+        <div class="input-box">
+          <span class="details">CVC</span>
+          <input type="text" placeholder="646" required>
         </div>
       </div>
       <div class="seller-details">
         <input type="radio" name="seller" id="dot-1">
         <input type="radio" name="seller" id="dot-2">
         <input type="radio" name="seller" id="dot-3">
-        <span class="seller-title">Please select your role</span>
+        <span class="seller-title">Please select your payment method</span>
         <div class="category">
           <label for="dot-1">
             <span class="dot one"></span>
-            <span class="seller">Buyer</span>
+            <span class="seller">Credit Card</span>
           </label>
           <label for="dot-2">
             <span class="dot two"></span> 
-            <span class="seller">Seller</span>
+            <span class="seller">Vipps</span>
           </label>
           <label for="dot-3">
             <span class="dot three"></span>
-            <span class="seller">Both</span>
+            <span class="seller">Paypal</span>
           </label>
         </div>
       </div>
-      <div class="btn-loggin">
+      <a href="/checkout-sucsess.html"><div class="btn-loggin">
        <a href="/login.html"> <h4>Already got an account? Log inn here</h4></a>
-        <input type="submit" value="Register">
+        <input type="submit" value="Place Order">
+      </div></a>
+      <div class="social-links">
+        <p>Find us at:</p>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitch"></i>
+        </a>
       </div>
+      
     </form>
+  </div>
+  <div class="checkout-container">
+    <h4>Cart
+      <span class="price"><i class="fa fa-shopping-cart"><b>1</b></i></span>
+    </h4>
+    <p><a href="#">Product</a><span class="price">39.99$</span></p>
+    <p>Subtotal <span class="price">39.99$</span></p>
+    <p>Shipping <span class="price">FREE</span></p>
+    <p>Tax <span class="price">00.01$</span></p>
+    <hr>
+    <p>Total <span class="price" style="color: black;"><b>40$</b></span></p>
+  </div>
   </div>
 </section>
 

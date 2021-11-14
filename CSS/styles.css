@@ -2,13 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  max-height: 1330px;
 }
 header {
   background-color: #e6da65;
 }
 body {
   font-family: 'Chakra Petch', sans-serif;
+  box-sizing: border-box;
 }
 h1 {
   font-family: 'Chakra Petch';
@@ -17,11 +17,6 @@ h1 {
   color: #e5e5e5;
 }
 
-h2 {
-  font-size: 48px;
-  color: #e5e5e5;
-  font-weight: 300;
-}
 .container {
   max-width: 1330px;
   margin: 0 auto;
@@ -30,6 +25,10 @@ h2 {
 .container1 {
   display: flex;
   justify-content: center;
+}
+.game-container {
+  line-height: 1.5;
+  background-color: #e5e5e5;
 }
 .logo {
   width: 150px;
@@ -43,6 +42,7 @@ h2 {
   flex-direction: row;
   align-items: flex-end;
 }
+
 a {
   text-decoration: none;
   color: #1d2540;
@@ -65,6 +65,20 @@ a {
   display: inline-block;
   margin: 20px;
 }
+.fa-user-circle {
+  opacity: 0;
+}
+.fa-gamepad {
+  opacity: 0;
+}
+.fa-comments {
+  opacity: 0;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: row;
+}
 
 .hero-banner {
   height: 708px;
@@ -82,6 +96,7 @@ a {
 
 .hbt2 {
   padding-left: 75px;
+  color: #c4c4c4;
 }
 .bold {
   font-weight: 500;
@@ -128,9 +143,21 @@ a {
   margin: 0 auto;
   height: 600px;
 }
+.game-columns {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 150px;
+  flex-wrap: wrap;
+}
 .card {
   max-width: 250px;
   width: 250px;
+}
+.cover1 {
+  max-width: 150px;
+  height: 150px;
 }
 
 .card h3 {
@@ -140,9 +167,6 @@ a {
   margin-bottom: 5px;
 }
 
-img {
-  width: 100%;
-}
 .button-card {
   color: black;
   width: 200px;
@@ -158,6 +182,7 @@ img {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 h3 {
   font-style: italic;
@@ -167,7 +192,7 @@ h3 {
 .games {
   display: flex;
   justify-content: space-between;
-  color: #e5e5e5;
+  color: #1d2540;
 }
 
 .pre {
@@ -235,6 +260,13 @@ h3 {
   font-weight: 300;
   color: #1d2540;
 }
+.features-title {
+  font-size: 48px;
+  font-family: 'Chakra Petch';
+  text-align: center;
+  font-weight: 300px;
+  color: #e5e5e5;
+}
 .community {
   width: 100%;
   height: 800px;
@@ -242,7 +274,6 @@ h3 {
   background-size: cover;
   color: #d3c033;
   opacity: 0.8;
-
   display: flex;
   justify-content: center;
 }
@@ -314,7 +345,6 @@ h3 {
   flex: 1;
 }
 main {
-  height: 800px;
   max-width: 1330px;
 }
 .container-contact {
@@ -412,7 +442,7 @@ h2:after {
 }
 .login-container {
   display: flex;
-  height: 100vh;
+
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -498,6 +528,14 @@ form .seller-details .category {
   border-color: #000;
   background: #fff;
 }
+.checkout-container {
+  max-width: 700px;
+  width: 100%;
+  background: #c4c4c4;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
 form input[type='radio'] {
   display: none;
 }
@@ -531,6 +569,146 @@ form .btn-loggin input:hover {
   padding: 20px 100px;
 }
 
+.games-container {
+  width: 88vw;
+  margin: 0 auto;
+}
+.game-title,
+.sm-title,
+.md-title {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+}
+.game-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.3rem 0;
+  opacity: 0.9;
+}
+.md-title {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+.sm-title {
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.games {
+  background: #2b2b2b;
+  padding: 3.2rem 0;
+}
+
+.game {
+  margin: 2rem;
+  position: relative;
+}
+.game-content {
+  background: #e5e5e5;
+  padding: 3rem 0.5rem 2rem 0.5rem;
+  cursor: pointer;
+}
+.game-img {
+  background: #01403a;
+  box-shadow: 0 0 20px 10px #e5e5e5;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: background 0.5s ease;
+}
+.game-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.btn-cart,
+.btn-buy {
+  background: transparent;
+  border: 1px solid black;
+  padding: 0.8rem 0;
+  width: 125px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+}
+.btn-cart {
+  background: black;
+  color: white;
+}
+.btn-cart:hover {
+  background: teal;
+}
+.btn-buy {
+  background: white;
+}
+.btn-buy:hover {
+  background: teal;
+  color: #fff;
+}
+.game-info {
+  padding: 2rem;
+  background: #e5e5e5;
+}
+.game-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating span {
+  color: #d3c033;
+  font-size: 10px;
+}
+.game-name {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.game-price {
+  padding-top: 0.6rem;
+  padding-right: 0.6rem;
+  display: inline-block;
+}
+.game-price:first-of-type {
+  text-decoration: line-through;
+  color: #01403a;
+}
+.game-img img {
+  transition: transform 0.6s ease;
+}
+.game:hover .game-img img {
+  transform: scale(1.1);
+}
+.game:hover .game-img {
+  background: #01403a;
+}
+.game:hover .game-btns {
+  opacity: 1;
+}
+.off-info .sm-title {
+  background: #01403a;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  z-index: 1;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
 .container-account:after {
   content: '';
   position: absolute;
@@ -559,18 +737,234 @@ form .btn-loggin input:hover {
   border: none;
   transition: 0.3s;
 }
-/* Contact page */
-@media screen and (max-width: 880px) {
-  .contact-box {
-    grid-template-columns: 1fr;
-  }
-  .left {
-    height: 200px;
-  }
+.game-wrapper {
+  max-width: 900px;
+  margin: 0;
 }
+.img-display {
+  overflow: hidden;
+}
+.img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.img-showcase img {
+  min-width: 100%;
+}
+.img-select {
+  display: flex;
+}
+.img-item {
+  margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+.img-item:hover {
+  opacity: 0.8;
+}
+.product-content {
+  padding: 2rem 1rem;
+}
+.product-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  color: #2b2b2b;
+  margin: 1rem 0;
+}
+.product-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 80px;
+  background: #d3c033;
+  transform: translateX(0%);
+}
+.product-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  background: #256eff;
+  color: #fff;
+  padding: 0 0.3rem;
+  transition: all 0.5s ease;
+}
+.product-link:hover {
+  opacity: 0.9;
+}
+.product-rating {
+  color: #d3c033;
+}
+.product-rating span {
+  font-weight: 600;
+  color: #01403a;
+}
+.product-price {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.product-price span {
+  font-weight: 600;
+}
+.original-price span {
+  font-weight: 600;
+  color: tomato;
+  text-decoration: line-through;
+}
+.new-price span {
+  color: #01403a;
+}
+.product-detail h2 {
+  text-transform: capitalize;
+  color: #1d2540;
+  padding-bottom: 0.6rem;
+}
+.product-detail p {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+  font-family: 'Roboto';
+}
+.product-detail ul {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+.product-detail ul li {
+  margin: 0;
+  list-style: none;
+  font-weight: 400;
+  opacity: 0.9;
+}
+.product-detail ul li span {
+  font-weight: 400;
+}
+.purchase-info {
+  margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .add-cart {
+  border: 1px solid#ddd;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  outline: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto';
+}
+.purchase-info input {
+  width: 60px;
+}
+.purchase-info .add-cart {
+  cursor: pointer;
+  color: #e5e5e5;
+}
+.purchase-info .add-cart:first-of-type {
+  background: #256eff;
+}
+.purchase-info .add-cart:last-of-type {
+  background: #01403a;
+}
+.purchase-info .add-cart:hover {
+  opacity: 0.9;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #000;
+  border: 1px solid #000;
+  margin: 0 0.2rem;
+  font-size: 0.8rem;
+}
+.social-links2 {
+  display: flex;
+  align-items: center;
+}
+.social-links2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  border: 1px solid #000;
+  margin: 0 0.2rem;
+  font-size: 0.8rem;
+}
+.social-links2 a:hover {
+  background: #27ae60;
+}
+.social-links a:hover {
+  background: #000;
+  border-color: transparent;
+  color: #fff;
+}
+.float-layout {
+  padding: 5px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+.card-container {
+  overflow: hidden;
+}
+.checkout-card {
+  background-color: #2b2b2b;
+  color: #e5e5e5;
+  width: 100%;
+  float: right;
+}
+.card-titlte {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.card-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.card-image {
+  display: flex;
+}
+div.card-image img {
+  width: 50%;
+  height: auto;
+}
+
 @media screen and (max-width: 584px) {
   .container-login {
     max-width: 100%;
+  }
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+  .card-image {
+    flex-direction: column;
+  }
+  .checkout-card {
+    width: 100%;
+    margin-top: -4px;
   }
   form .user-details .input-box {
     margin-bottom: 15px;
@@ -587,12 +981,60 @@ form .btn-loggin input:hover {
     width: 0;
   }
 }
-
+/* Contact page */
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+  .button-card {
+    color: black;
+    text-decoration: none;
+    border-style: solid;
+    font-family: 'Chakra Petch';
+    font-weight: 300;
+    background-color: #d3c033;
+    padding: 0px 49px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .game-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #e5e5e5;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ul-mobile {
+    display: none;
+  }
+  .fa-user-circle {
+    font-size: 32px;
+    padding-bottom: 10px;
+    opacity: 1;
+  }
+  .fa-gamepad {
+    font-size: 32px;
+    padding-bottom: 10px;
+    opacity: 1;
+  }
+  .fa-comments {
+    font-size: 32px;
+    padding-bottom: 10px;
+    opacity: 1;
+  }
+}
 /* Mobile */
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 1024px) {
   .searchbar {
     width: 200px;
-    height: 20px;
+    height: 40px;
     text-indent: 10px;
     font-family: 'Roboto';
     font-size: 14px;
@@ -602,7 +1044,22 @@ form .btn-loggin input:hover {
     margin-bottom: 12px;
   }
   .hero-banner {
-    height: 375px;
+    height: 475px;
+  }
+  .nav-desktop {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .card {
+    max-width: 350px;
+    width: 350px;
+  }
+
+  .ul-mobile {
+    display: none;
   }
   .hero-banner-text {
     width: 1330px;
@@ -616,7 +1073,9 @@ form .btn-loggin input:hover {
   .even-columns {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /*Lager jevn plass MELLOM elementene
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*Lager jevn plass MELLOM elementene
     Justify-content: space-around; 
     kan også brukes her og lager automatisk like mye plass mellom 
     elementene 
@@ -630,11 +1089,13 @@ form .btn-loggin input:hover {
     height: auto;
     padding-bottom: 15px;
   }
+
   .logo {
-    width: 66px;
-    height: 42px;
+    width: 72px;
+    height: 72px;
     display: flex;
   }
+
   h1 {
     font-family: 'Chakra Petch';
     font-size: 25px;
@@ -646,7 +1107,10 @@ form .btn-loggin input:hover {
     color: #e5e5e5;
     font-weight: 300;
   }
-
+  .cover1 {
+    max-width: 150px;
+    height: 150px;
+  }
   .button {
     cursor: pointer;
     background-color: #d3c033;
@@ -731,5 +1195,15 @@ form .btn-loggin input:hover {
     display: flex;
     float: inline-start;
     padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .game-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .game {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
