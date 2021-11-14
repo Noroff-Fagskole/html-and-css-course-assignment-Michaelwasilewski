@@ -534,6 +534,7 @@ form .seller-details .category {
   background: #c4c4c4;
   padding: 25px 30px;
   border-radius: 5px;
+  margin: 20px;
 }
 
 form input[type='radio'] {
