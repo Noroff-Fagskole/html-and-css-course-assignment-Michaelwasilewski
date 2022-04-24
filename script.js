@@ -1,4 +1,4 @@
-const APIUrl = 'http://flowerpower.local/wp-json/wc/store/products';
+const APIUrl = 'https://relieved-tortoise.flywheelsites.com/wp-json/wc/store/products';
 
 const gamesContainer = document.querySelector('.games-container');
 

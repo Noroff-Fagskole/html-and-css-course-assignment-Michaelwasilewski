@@ -4,7 +4,8 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get('id');
 
-const APIUrl = `http://flowerpower.local/wp-json/wc/store/products/${id}`;
+
+const APIUrl = `https://relieved-tortoise.flywheelsites.com/wp-json/wc/store/products/${id}`;
 
 const gameName = document.querySelector('.game-name');
 const gameDetails = document.querySelector('.game-details');
