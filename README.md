@@ -1,33 +1,53 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6279707&assignment_repo_type=AssignmentRepo)
-<img src="./.readme/noroff-light.png" width="160" align="right">
+# My first HTML & Css Website
 
-# HTML and CSS - Assignment 2021
-
-## Brief
-
-- You need to deliver a properly functioning, responsive website for the assignment brief that you chose in Design 1.
-
--The site needs to have every page listed in the site architecture on your chosen brief. Certain functionality that requires JavaScript can be mimicked for now, for example a log in page could link across from the ‘Sign in’ button.
-
--The HTML should be semantic and neat.
-
--The CSS should follow the DRY principle and be easy to read.
-
--The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. Please do not use a CSS framework like Bootstrap, we want to see that you can build responsive sites without the help of a framework.
-
--The site should be WCAG compliant and accessibility taken into account.
-
--Each page should have a unique meta description, title, and h1.
-
--You should not use copied code in your submission. All code submitted must be written by you. You may use external sources to show you how to achieve specific effects, and these should be included in your report.
+![image](https://user-images.githubusercontent.com/89254319/171606419-bd1e147a-9acd-4e00-a637-65e534cf5190.png)
+![image](https://user-images.githubusercontent.com/89254319/171605782-493fb62b-24d6-42f2-94bd-0f209f15f7cd.png)
 
 
-## Submission
+## Description
 
-- You need to submit:
-A link to your GitHub repository. Your last commit must be before your deadline.
-A link to your website live on Netlify.
-A PDF report on the process you went through to complete this CA and the final product. Your report should include reflection on your submission, and must have at least the following main sections: introduction, body, conclusion, and references (if applicable).
-Your report must be 600-1000 words.
+This project was about creating "GameHub" The universe of games. With the following pages
 
-Please use the report template provided: https://core-noroff.bravais.com/api/dynamic/documentVersions/4812/files/35152/media/FEU%201/Project%20Methodology/Other/FEU1reporttemplate.docx
+- Home
+- List of games
+- A games page showing the product details
+- Checkout page
+- Checkout success
+- About
+- Contact
+- Its target audience is for gamers aged 18 to 25.
+- Website is responsive and looks nice on all screen sizes.
+
+## Built With
+
+
+- HTML
+- CSS
+
+
+## Getting Started
+
+### Installing
+
+Clone this repo and start it with live server to see the action :)
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:Noroff-Fagskole/html-and-css-course-assignment-Michaelwasilewski.git
+```
+
+
+### Running
+
+To run the app simply clone this repo and open with live server.
+
+## Contact
+
+
+[My Facebook page](https://www.facebook.com/Wasiu1243/)
+
+[My LinkedIn page](https://www.linkedin.com/in/michal-wasilewski-751b8921a/)
+
+
+
