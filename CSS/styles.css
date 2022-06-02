@@ -852,7 +852,7 @@ form .btn-loggin input:hover {
 }
 .purchase-info input,
 .purchase-info .add-cart {
-  border: 1px solid#ddd;
+  border: 1px solid #ddd;
   text-align: center;
   padding: 0.5rem 1rem;
   outline: 0;
